@@ -1,12 +1,13 @@
 from telegram.client import Telegram
+import requests
 
 def log(msg):
     requests.post("http://pushmebot.ru/send", data={'key': '1a8a8768c2d7c7a674f3355c4a917dd8', 'message': msg})
 
 tg = Telegram(
-    api_id='846196 ',
+    api_id='846196',
     api_hash='8a83b26ce76d21f97851ac70329a9158',
-    phone='+79006456258',
+    phone='+79649824012',
     database_encryption_key='randomkey'
 )
 
