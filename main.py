@@ -20,7 +20,7 @@ try:
         database_encryption_key=conf['auth']['database_key'])
 
     tg.login()
-except:
+except Exception:
     pushme('Login ERROR(')
 else:
     pushme('Login success!')
